@@ -1,0 +1,649 @@
+// out: ../css/
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: #0dcaf0;
+}
+
+body {
+  position: relative;
+}
+
+#headimg {
+  width: 100%;
+}
+
+nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.bg-body-tertiary {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.container-fluid {
+
+  .navbar-nav {
+    .nav-item {
+      border-right: 1px solid rgb(50, 50, 50);
+
+      .nav-link:hover {
+        color: #0dcaf0;
+      }
+
+      .nav-link {
+        font-size: 1.1rem;
+      }
+    }
+
+    .nav-item:nth-child(4) {
+      border-right: none;
+    }
+  }
+
+  .btn {
+    ul {
+      display: flex;
+
+      li {
+        position: relative;
+        width: 4.5rem;
+        height: 2rem;
+        line-height: 2rem;
+        list-style: none;
+        transition: all 0.5s;
+        transform-style: preserve-3d;
+
+        a {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          border: 1px solid black;
+          border-radius: 5%;
+          text-decoration: none;
+          color: white;
+        }
+
+        a:first-child {
+          background-color: rgb(33, 170, 224);
+          transform: translateZ(20px);
+        }
+
+        a:last-child {
+          background-color: rgb(57, 246, 104);
+          transform: rotateX(90deg) translateZ(20px);
+        }
+      }
+
+      li:hover {
+        transform: rotateX(-90deg);
+      }
+    }
+  }
+}
+
+
+// 电梯导航
+@media (max-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 20rem;
+    right: 1rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 28rem;
+    right: 3rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    height: 2.4rem;
+    width: 2.4em;
+  }
+}
+
+@media (min-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 38rem;
+    right: 4rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 3.5em;
+  }
+}
+
+.xtx-elevator {
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+
+  a {
+    margin-top: 5%;
+    display: block;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(192, 191, 191);
+
+  }
+
+  a:hover {
+    background-color: rgb(239, 235, 235);
+  }
+}
+
+//分页
+@media (max-width: 1200px) {
+  .content {
+    #page2 {
+      margin-top: 1%;
+
+      #information {
+        padding: 1rem;
+        margin-left: 15%;
+        width: 70%;
+        height: 35rem;
+        border: 1px solid black;
+        text-align: center;
+
+        p {
+          margin-top: 1%;
+          color: gray;
+        }
+      }
+    }
+
+    #page3 {
+      text-align: center;
+
+      h2 {
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+    }
+
+    #page4 {
+      text-align: center;
+
+      h2 {
+        margin-top: 2%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      #about {
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        border: 1px solid black;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    #page2 {
+      margin-top: 1%;
+
+      #information {
+        padding: 1rem;
+        margin-left: 15%;
+        width: 70%;
+        height: 35rem;
+        border: 1px solid black;
+        text-align: center;
+
+        p {
+          margin-top: 1%;
+          color: gray;
+        }
+      }
+    }
+
+    #page3 {
+      text-align: center;
+
+      h2 {
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+    }
+
+    #page4 {
+      text-align: center;
+
+      h2 {
+        margin-top: 2%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      #about {
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        border: 1px solid black;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    #page2 {
+      margin-top: 1%;
+
+      #information {
+        padding: 1rem;
+        margin-left: 15%;
+        width: 70%;
+        height: 35rem;
+        border: 1px solid black;
+        text-align: center;
+
+        p {
+          margin-top: 1%;
+          color: gray;
+        }
+      }
+    }
+
+    #page3 {
+      text-align: center;
+
+      h2 {
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+    }
+
+    #page4 {
+      text-align: center;
+
+      h2 {
+        margin-top: 2%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      #about {
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        border: 1px solid black;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    #page1 {
+      width: 100%;
+      height: auto;
+
+      .remind {
+        display: none;
+        position: absolute;
+        top: 36%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        border: 1px solid black;
+        height: 10%;
+        background-color: rgba(242, 240, 240, 0.9);
+
+        .close {
+          background-color: skyblue;
+
+
+          i {
+            margin-left: 95%;
+            cursor: pointer;
+          }
+        }
+
+        .remindcontent {
+          margin-top: 2%;
+          margin-left: 5%;
+        }
+      }
+
+      .left {
+        margin-left: 11%;
+        width: 60%;
+        background-color: gainsboro;
+        display: flex;
+
+        .leftpart {
+          margin: 3%;
+
+          button {
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 80%;
+            height: 3rem;
+            background-color: rgb(255, 111, 0);
+            color: white;
+            border: none;
+          }
+
+          button:hover {
+            background-color: rgb(241, 177, 127);
+          }
+        }
+
+        .lefttxt {
+          h4 {
+            margin-top: 2rem;
+          }
+
+          .classify {
+            margin-top: 6%;
+            font-size: 14px;
+            color: gray;
+
+            a {
+              text-decoration: none;
+            }
+          }
+
+          .special {
+            margin-top: 4%;
+            font-size: 13px;
+            color: gray;
+
+            button {
+              border-radius: 5px;
+
+              color: greenyellow;
+              background-color: white;
+              border: 1px solid gray;
+            }
+
+            button:hover {
+              color: orange;
+            }
+          }
+
+          .introduce {
+            margin-top: 4%;
+            font-size: 13px;
+            color: gray;
+            margin-right: 5%;
+            line-height: 22px;
+
+            span {
+              color: #000;
+            }
+          }
+
+          .htmlreduce {
+            padding: 1%;
+            width: 80%;
+            background-color: rgb(241, 224, 193);
+            margin-top: 8%;
+            border: 1px solid orange;
+            font-size: 15px;
+
+            img {
+              margin-right: 2%;
+            }
+
+          }
+
+          .remember {
+            margin-left: 5%;
+            margin-top: 15%;
+            font-size: 13px;
+            color: gray;
+
+            span {
+              color: #000;
+            }
+          }
+        }
+
+      }
+
+      .right {
+        position: absolute;
+        top: 24%;
+        right: 0;
+        width: 25%;
+
+      }
+
+      .leftbottom {
+        .top {
+          margin-top: 1%;
+          margin-left: 11%;
+
+          span {
+            font-weight: 700;
+            font-size: 18px;
+          }
+        }
+
+        .guide {
+          margin-top: 1%;
+          margin-left: 12%;
+
+          span {
+
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+          #iconcontrol {
+            margin-right: 35%;
+
+            span {
+              font-size: 13px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .howtoplay {
+          margin-top: 1%;
+          margin-left: 12%;
+
+          span {
+
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+        }
+
+        .gametarget {
+          margin-top: 1%;
+          margin-left: 12%;
+
+          span {
+
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+
+        .bottomremember {
+          margin-top: 1%;
+          margin-left: 12%;
+          font-size: 13px;
+          color: gray;
+        }
+      }
+    }
+
+    #page2 {
+      margin-top: 1%;
+      text-align: center;
+
+      h2 {
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      #information {
+        margin-top: 1%;
+        padding: 1rem;
+        margin-left: 15%;
+        width: 70%;
+        height: 35rem;
+        border: 1px solid black;
+        text-align: center;
+
+        p {
+          margin-top: 2%;
+          color: gray;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    #page3 {
+      text-align: center;
+
+      h2 {
+        margin-top: 1%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      h5 {
+        margin-top: 1%;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    #page4 {
+      text-align: center;
+
+      h2 {
+        margin-top: 1%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(245, 201, 121);
+      }
+
+      #about {
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        border: 1px solid black;
+        width: 70%;
+
+        p {
+          color: gray;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+// footer
+
+.project {
+  height: 15rem;
+  background: linear-gradient(to right, rgb(203, 242, 219), rgb(158, 217, 182),
+      rgb(102, 171, 131), rgb(51, 133, 85), rgb(7, 75, 35));
+
+  .content {
+    margin-top: 2rem;
+
+    .row {
+      div {
+        margin-top: 2rem;
+        height: 10rem;
+
+        a {
+          height: 10rem;
+          text-decoration: none;
+          color: white;
+
+          img {
+            margin-top: 1rem;
+          }
+        }
+
+        h5 {
+          margin-top: 8%;
+          color: white;
+        }
+
+        p {
+          font-size: 1rem;
+          color: white;
+        }
+      }
+    }
+
+  }
+
+}

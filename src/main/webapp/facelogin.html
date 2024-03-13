@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人脸识别登陆</title>
+  <link rel="stylesheet" href="./css/facelogin.css">
+  <style>
+  </style>
+</head>
+
+<body>
+ <!-- 撑开页面 -->
+ <img src="./imgae/backgroundimglogin2.png" alt="">
+ <div class="container">
+  <h1>人脸识别登陆</h1>
+ <video id="video" width="640" height="480" autoplay></video>
+  <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+  <br>
+ <input type="text" placeholder="请输入用户名：" id="username">
+  <br>
+  <button id="captureButton">开始发送人脸</button>
+  <button id="facelogin">验证登陆</button>
+  <br>
+  <a href="login.html">以其他方式登陆</a>
+ <br>
+ <a href="faceregister.html">未注册人脸，前往注册</a>
+  </div>
+
+ <script src="js/jquery-3.7.1.js"></script>
+ <script>
+ const video = document.getElementById('video');
+ const canvas = document.getElementById('canvas');
+ const captureButton = document.getElementById('captureButton');
+ const username = document.querySelector('#username')
+ const facelogin = document.querySelector('#facelogin')
+ // 禁用第二个按钮
+ facelogin.disabled = true;
+
+ let captureCount = 0;
+
+ navigator.mediaDevices.getUserMedia({ video: true })
+         .then((stream) => {
+          video.srcObject = stream;
+         })
+         .catch((error) => {
+          console.error('Error accessing camera: ', error);
+         });
+
+ captureButton.addEventListener('click', () => {
+  startCountdown()
+  captureImage();
+ });
+ // 按钮倒计时
+ function startCountdown() {
+  var countdown = 5; // 设置倒计时时间，单位为秒
+
+  // 每秒更新倒计时时间，并在时间结束后显示第二个按钮
+  var countdownInterval = setInterval(function () {
+   facelogin.innerHTML = "倒计时: " + countdown;
+   countdown--;
+
+   if (countdown < 0) {
+    clearInterval(countdownInterval);
+    facelogin.innerHTML = "验证登陆";
+    facelogin.disabled = false;
+   }
+  }, 1000);
+ }
+
+ function captureImage() {
+  const context = canvas.getContext('2d');
+  context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+  const imageDataUrl = canvas.toDataURL('image/jpeg');
+
+  // Send imageDataUrl to the server using AJAX or other methods
+  // Example: Send data to a servlet using XMLHttpRequest
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'facelogin', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onreadystatechange = function () {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log('Image sent successfully');
+   }
+  };
+  const combinedData = 'imageData=' + encodeURIComponent(imageDataUrl) + '&username=' + encodeURIComponent(username.value);
+  xhr.send(combinedData);
+  captureCount++;
+  if (captureCount < 60) {
+   setTimeout(captureImage, 40); // 继续截取图片，每隔20ms执行一次
+  }
+ }
+
+ //验证人脸登录按钮
+ facelogin.addEventListener('click', function () {
+
+  $.ajax({
+   url: "FaceLoginHttp",
+   method: "POST",
+   data: {
+    action: "facelogin",
+
+   },
+   success: function (data) {
+    if (data === "successadmin") {
+     alert('登陆成功！即将跳转管理主页面!')
+     location.href = "adminindex.html"
+    }
+    else if (data === "successuser") {
+     alert('登陆成功！即将跳转用户主页面!')
+     location.href = "successindex.html"
+    }
+    else {
+     alert('登陆失败！请重新尝试或以其他方式登陆！')
+    }
+   },
+   error: function () {
+    console.log("AJAX请求出错");
+   }
+  });
+ })
+</script>
+</body>
+
+</html>

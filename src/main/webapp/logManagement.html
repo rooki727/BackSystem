@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>管理日志</title>
+  <link rel="stylesheet" href="iconfont/font_4328816_uki28nmxnai/iconfont.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/logManagement.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <ul>
+      <!-- <li><a><img src="../imgae/logo.png" alt="logo"></a></li> -->
+      <li class="index"><a class="index">首页</a></li>
+      <li class="userManagement"><a class="">用户管理</a></li>
+      <li class="logManagement active "><a class="">管理日志</a></li>
+      <li class="userlogManagement"><a class="">用户日志</a></li>
+    </ul>
+  </div>
+  <!-- 内容 -->
+  <div class="exterior">
+    <!-- 用户显示以及退出登陆 -->
+    <div class="info">
+      <i class="iconfont icon-renzhengyonghu"></i>
+      <span id="userinfotext1"></span>
+      <button type="button" class="exit" value="退出">退出</button>
+    </div>
+    <div class="indexcontent">
+      <button id="refreshBtn">刷新</button><span>管理日志</span>
+      <div id="expressall">
+        <!-- 此处传入 -->
+      </div>
+    </div>
+  </div>
+  <script src="js/logManagement.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+</body>
+
+</html>

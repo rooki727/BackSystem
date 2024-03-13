@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: rgba(237, 232, 232, 0.5);
+}
+.sidebar {
+  width: 10%;
+  background-color: white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  border: 1px solid #8e8d8d;
+}
+.sidebar ul {
+  margin-top: 100px;
+  list-style: none;
+  padding-left: 5%;
+}
+.sidebar ul li {
+  padding: 8% 14%;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+.sidebar ul li a img {
+  width: 80%;
+  margin-bottom: 20%;
+}
+.sidebar ul .active {
+  background-color: #ddd;
+}
+.sidebar ul li:hover {
+  background-color: #ddd;
+}
+@media (min-width: 996px) {
+  .exterior {
+    margin-left: 10%;
+    position: relative;
+    height: 100%;
+    height: 53rem;
+    flex: 1;
+  }
+  .exterior .info {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    color: red;
+  }
+  .exterior .info .icon-renzhengyonghu {
+    color: black;
+  }
+  .exterior .info .exit {
+    margin-top: 3%;
+    display: block;
+    margin: 0 1rem;
+    color: black;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    background-color: #0eaae8;
+    border: 1.2px solid #585656;
+    color: white;
+  }
+  .exterior .info .exit:hover {
+    background-color: skyblue;
+  }
+  .exterior .indexcontent {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    width: 88%;
+    height: 76%;
+    background-color: #ddd;
+  }
+  .exterior .indexcontent .admintotal {
+    text-align: center;
+    margin-top: 8%;
+    width: 26%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .exterior .indexcontent .admintotal p {
+    margin-top: 35%;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .exterior .indexcontent .admintotal span {
+    font-size: 18px;
+    color: red;
+  }
+  .exterior .indexcontent .usertotal {
+    text-align: center;
+    margin-top: 8%;
+    width: 26%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .exterior .indexcontent .usertotal p {
+    margin-top: 35%;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .exterior .indexcontent .usertotal span {
+    font-size: 18px;
+    color: red;
+  }
+}

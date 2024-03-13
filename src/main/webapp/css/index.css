@@ -1,0 +1,503 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #0dcaf0;
+}
+body {
+  position: relative;
+}
+#headimg {
+  width: 100%;
+}
+nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid white;
+}
+.bg-body-tertiary {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+.container-fluid .navbar-nav .nav-item {
+  border-right: 1px solid #323232;
+}
+.container-fluid .navbar-nav .nav-item .nav-link:hover {
+  color: #0dcaf0;
+}
+.container-fluid .navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem;
+}
+.container-fluid .navbar-nav .nav-item:nth-child(4) {
+  border-right: none;
+}
+.container-fluid .btn ul {
+  display: flex;
+}
+.container-fluid .btn ul li {
+  position: relative;
+  width: 4.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  list-style: none;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
+}
+.container-fluid .btn ul li a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5%;
+  text-decoration: none;
+  color: white;
+}
+.container-fluid .btn ul li a:first-child {
+  background-color: #21aae0;
+  transform: translateZ(20px);
+}
+.container-fluid .btn ul li a:last-child {
+  background-color: #39f668;
+  transform: rotateX(90deg) translateZ(20px);
+}
+.container-fluid .btn ul li:hover {
+  transform: rotateX(-90deg);
+}
+@media (max-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 20rem;
+    right: 1rem;
+  }
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 28rem;
+    right: 3rem;
+  }
+  .xtx-elevator a {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    height: 2.4rem;
+    width: 2.4em;
+  }
+}
+@media (min-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 38rem;
+    right: 4rem;
+  }
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 3.5em;
+  }
+}
+.xtx-elevator {
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+}
+.xtx-elevator a {
+  margin-top: 5%;
+  display: block;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #c0bfbf;
+}
+.xtx-elevator a:hover {
+  background-color: #efebeb;
+}
+@media (max-width: 1200px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .content #page1 {
+    width: 100%;
+    height: auto;
+  }
+  .content #page1 .remind {
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    border: 1px solid black;
+    height: 10%;
+    background-color: rgba(242, 240, 240, 0.9);
+  }
+  .content #page1 .remind .close {
+    background-color: skyblue;
+  }
+  .content #page1 .remind .close i {
+    margin-left: 95%;
+    cursor: pointer;
+  }
+  .content #page1 .remind .remindcontent {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .content #page1 .left {
+    margin-left: 11%;
+    width: 60%;
+    background-color: gainsboro;
+    display: flex;
+  }
+  .content #page1 .left .leftpart {
+    margin: 3%;
+  }
+  .content #page1 .left .leftpart button {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 3rem;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+  }
+  .content #page1 .left .leftpart button:hover {
+    background-color: #f1b17f;
+  }
+  .content #page1 .left .lefttxt h4 {
+    margin-top: 2rem;
+  }
+  .content #page1 .left .lefttxt .classify {
+    margin-top: 6%;
+    font-size: 14px;
+    color: gray;
+  }
+  .content #page1 .left .lefttxt .classify a {
+    text-decoration: none;
+  }
+  .content #page1 .left .lefttxt .special {
+    margin-top: 4%;
+    font-size: 13px;
+    color: gray;
+  }
+  .content #page1 .left .lefttxt .special button {
+    border-radius: 5px;
+    color: greenyellow;
+    background-color: white;
+    border: 1px solid gray;
+  }
+  .content #page1 .left .lefttxt .special button:hover {
+    color: orange;
+  }
+  .content #page1 .left .lefttxt .introduce {
+    margin-top: 4%;
+    font-size: 13px;
+    color: gray;
+    margin-right: 5%;
+    line-height: 22px;
+  }
+  .content #page1 .left .lefttxt .introduce span {
+    color: #000;
+  }
+  .content #page1 .left .lefttxt .htmlreduce {
+    padding: 1%;
+    width: 80%;
+    background-color: #f1e0c1;
+    margin-top: 8%;
+    border: 1px solid orange;
+    font-size: 15px;
+  }
+  .content #page1 .left .lefttxt .htmlreduce img {
+    margin-right: 2%;
+  }
+  .content #page1 .left .lefttxt .remember {
+    margin-left: 5%;
+    margin-top: 15%;
+    font-size: 13px;
+    color: gray;
+  }
+  .content #page1 .left .lefttxt .remember span {
+    color: #000;
+  }
+  .content #page1 .right {
+    position: absolute;
+    top: 24%;
+    right: 0;
+    width: 25%;
+  }
+  .content #page1 .leftbottom .top {
+    margin-top: 1%;
+    margin-left: 11%;
+  }
+  .content #page1 .leftbottom .top span {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .content #page1 .leftbottom .guide {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .guide span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .guide p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol {
+    margin-right: 35%;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol span {
+    font-size: 13px;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol p {
+    font-size: 15px;
+  }
+  .content #page1 .leftbottom .howtoplay {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .howtoplay span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .howtoplay p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .gametarget {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .gametarget span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .gametarget p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .bottomremember {
+    margin-top: 1%;
+    margin-left: 12%;
+    font-size: 13px;
+    color: gray;
+  }
+  .content #page2 {
+    margin-top: 1%;
+    text-align: center;
+  }
+  .content #page2 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page2 #information {
+    margin-top: 1%;
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 2%;
+    color: gray;
+    font-size: 1.2rem;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    margin-top: 1%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page3 h5 {
+    margin-top: 1%;
+  }
+  .content #page3 h5 a {
+    text-decoration: none;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 1%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+  .content #page4 #about p {
+    color: gray;
+    font-size: 1.2rem;
+  }
+}
+.project {
+  height: 15rem;
+  background: linear-gradient(to right, #cbf2db, #9ed9b6, #66ab83, #338555, #074b23);
+}
+.project .content {
+  margin-top: 2rem;
+}
+.project .content .row div {
+  margin-top: 2rem;
+  height: 10rem;
+}
+.project .content .row div a {
+  height: 10rem;
+  text-decoration: none;
+  color: white;
+}
+.project .content .row div a img {
+  margin-top: 1rem;
+}
+.project .content .row div h5 {
+  margin-top: 8%;
+  color: white;
+}
+.project .content .row div p {
+  font-size: 1rem;
+  color: white;
+}

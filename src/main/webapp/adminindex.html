@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>管理用户系统</title>
+  <link rel="stylesheet" href="iconfont/font_4328816_uki28nmxnai/iconfont.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/adminindex.css">
+</head>
+
+<body>
+  <!-- 侧边导航 -->
+  <div class="sidebar">
+    <ul>
+      <!-- <li><a><img src="../imgae/logo.png" alt="logo"></a></li> -->
+      <li class="index active "><a class="index">首页</a></li>
+      <li class="userManagement"><a class="">用户管理</a></li>
+      <li class="logManagement"><a class="">管理日志</a></li>
+      <li class="userlogManagement"><a class="">用户日志</a></li>
+    </ul>
+  </div>
+  <!-- 内容 -->
+  <div class="exterior">
+    <!-- 用户显示以及退出登陆 -->
+    <div class="info">
+      <i class="iconfont icon-renzhengyonghu"></i>
+      <span id="userinfotext1"></span>
+      <button type="button" class="exit" value="退出">退出</button>
+    </div>
+
+    <div class="indexcontent">
+      <div class="admintotal">
+        <p>admin用户总量</p>
+        <span id="admintotal"></span>
+      </div>
+      <div class="usertotal">
+        <p>user用户总量</p>
+        <span id="usertotal"></span>
+      </div>
+    </div>
+  </div>
+  <script src="js/adminindex.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+
+</body>
+
+</html>

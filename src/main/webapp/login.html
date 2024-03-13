@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登陆页面</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+
+  </div>
+  <!-- 背景图 -->
+  <div class="contentpart">
+    <div class="loginpage">
+
+
+      <div class="accpass">
+        <form action="/LoginServlet" method="post">
+        <h2>用户登录</h2>
+        <input type="text" placeholder="请输入用户名：" name="account" id="account">
+        <br>
+        <input type="password" placeholder="请输入密码：" name="password" id="password">
+        <br>
+        <div class="vcode">
+          <div class="captcha">
+            <p></p>
+          </div>
+          <input class="codeinput" type="text" placeholder="输入验证码" name="code" class="codeinput">
+          <span>验证不正确！</span>
+        </div>
+        <br>
+        <div class="agreement">
+          <label><input type="checkbox" class="agreementcheck">勾选同意和
+            <a href="#">用户协议</a>和
+            <a href="#">隐私政策</a>
+          </label>
+        </div>
+        <br>
+        <a href="register.html" class="gotoregister">没有账号，点击前往注册</a>
+        <br>
+        <a href="facelogin.html" class="gotoregister">使用人脸识别登陆</a>
+        <br>
+        <button type="button" class="logindiv" id="submit">登录</button>
+        </form>
+      </div>
+    </div>
+    <img src="imgae/backgroundimglogin2.png" alt="">
+  </div>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

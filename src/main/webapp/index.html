@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>扫雷小游戏</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<style>
+
+</style>
+
+<body>
+  <img src="imgae/head-img.jpg" id="headimg" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- logo -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="" alt=""></a>
+
+      <!-- 移动端下的按钮 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 简介栏 -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="showPage('page1')" id="index">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page2')" id="productinformation">产品信息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page3')" id="helpcenter">帮助中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page4')" id="about-us">关于我们</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 登陆注册 -->
+      <div class="btn">
+        <ul>
+          <li><a href="register.html">注册</a>
+            <a href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn">
+        <ul>
+          <li><a href="login.html">登陆</a>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 分页 -->
+  <div class="content">
+    <div id="page1" class="page">
+      <!-- 提示登陆 -->
+      <div class="remind" id="remind">
+        <div class="close"><i>X</i></div>
+        <div class="remindcontent">
+          请先登陆后体验！
+        </div>
+
+      </div>
+      <!-- 介绍 -->
+      <!-- 游戏介绍内容 -->
+      <div class="left">
+        <div class="leftpart">
+          <img src="imgae/reduce.jpg" alt=""><br>
+          <button type="button" id="startgame" class="startgame">开始游戏</button>
+        </div>
+        <div class="lefttxt">
+          <h4>扫雷小游戏</h4>
+          <div class="classify">分类：
+            <a href="#">益智小游戏</a>&nbsp;&nbsp;|&nbsp;&nbsp;大小：0.30M &nbsp;&nbsp;|&nbsp;&nbsp; 日期：2023-12-1
+          </div>
+          <div class="special">
+            专题：<button type="button">原创游戏</button>
+          </div>
+          <div class="introduce">
+            介绍：<span>游戏区包括雷区、地雷计数器（位于左上角，记录剩余地雷数）和计时器（位于右上角，记录游戏时间），
+              确定大小的矩形雷区中随机布置一定数量的地雷(初级为9*9个方块10个雷，中级为16*16个方块40个雷，高级为16*30个方块99个雷)，
+              玩家需要尽快找出雷区中的所有不是地雷的方块，而不许踩到地雷。</span>
+          </div>
+          <div class="htmlreduce">
+            <img src="imgae/h5.png" alt="">
+            该游戏为Html5游戏( H5游戏) , 无需安装任何插件，打开即玩。
+          </div>
+          <div class="remember">
+            请记住本站网址 <span>saolei.com</span>，方便下次再玩。
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="imgae/h5.jpg" alt="">
+      </div>
+      <div class="leftbottom">
+        <div class="top">
+          <img src="imgae/helpimg/piont.jpg" alt="">
+          <span>游戏玩法</span>
+        </div>
+        <div class="guide">
+          <img src="imgae/helpimg/jiantou.png" alt="">
+          <span>操作指南 (本游戏合适16岁以上用户)</span>
+          <div id="iconcontrol">
+            <img src="imgae/left.jpg" alt=""><span>鼠标左键</span>
+            <p>
+              左键单击：在判断出不是雷的方块上按下左键，
+              可以打开该方块。如果方块上出现数字，
+              则该数字表示其周围3×3区域中的地雷数（一般为8个格子，对于边块为5个格子，对于角块为3个格子。所以扫雷中最大的数字为8）；
+              如果方块上为空（相当于0），则可以递归地打开与空相邻的方块；
+              如果不幸触雷，则游戏结束。
+            </p>
+            <img src="imgae/right.jpg" alt=""><span>鼠标右键</span>
+            <p>右键单击：在判断为地雷的方块上按下右键，可以标记地雷（显示为小红旗）。
+              重复一次或两次操作可取消标记。</p>
+          </div>
+        </div>
+        <div class="howtoplay">
+          <img src="imgae/helpimg/jiantou.png" alt="">
+          <span>如何开始</span>
+          <p>在玩家使用鼠标点击格子后开始游戏并开始计时。</p>
+        </div>
+        <div class="gametarget">
+          <img src="imgae/helpimg/jiantou.png" alt="">
+          <span>游戏目标</span>
+          <p>以最快速度将全部的地雷排光。</p>
+        </div>
+
+        <div class="bottomremember">
+          请记住本站网址 <span>saolei.com</span>，方便下次再玩。《扫雷》小游戏由xx小组提供。
+        </div>
+      </div>
+      <!-- 电梯导航 -->
+      <div class="xtx-elevator">
+        <a class="topgo"><i>Top</i></a>
+        <a class="toplay">Play</a>
+        <a class="tofooter">bottom</a>
+      </div>
+    </div>
+    <div id="page2" class="page" style="display: none;">
+      <h2>产品简介</h2>
+      <div id="information">
+        <img src="" alt="">
+        <p>
+          H5（HyperText Markup Language
+          5）是一种用于构建网页内容的标准，
+          而Vue框架是一个流行的JavaScript框架，用于构建用户界面。
+          通过结合Vue框架和HTML5技术，
+          你可以开发出具有交互性和可玩性的小游戏，
+          并在各种支持HTML5的移动设备和浏览器上进行展示和运行。
+        </p>
+        <p>
+          扫雷小游戏：
+          游戏区包括雷区、地雷计数器（位于左上角，记录剩余地雷数）
+          和计时器（位于右上角，记录游戏时间），
+          确定大小的矩形雷区中随机布置一定数量的地雷(初级为9*9个方块10个雷，
+          中级为16*16个方块40个雷，高级为16*30个方块99个雷)，
+          玩家需要尽快找出雷区中的所有不是地雷的方块，而不许踩到地雷。
+        </p>
+      </div>
+    </div>
+    <div id="page3" class="page" style="display: none;">
+      <div class="helpcenter">
+        <h2>帮助流程图</h2>
+        <img src="imgae/help.jpg" alt="">
+        <h5>文字部分提示可见首页<a href="#" onclick="showPage('page1')" id="gotoplaycontrol" name="gotoplaycontrol">“游戏玩法”</a>
+        </h5>
+      </div>
+
+
+    </div>
+    <div id="page4" class="page" style="display: none;">
+      <h2>软件工程第一组:振鹏组</h2>
+      <div id="about">
+        <p>我们是计算机外包21的JAVA&nbsp;Web课程的小组。<br>
+          成员包括毛伟、john、关闽西、rooki。<br>
+          我们围绕选题“Java web小游戏”建立小组。<br>
+          人工智能&文档编写：john，前端：rooki，后端和h5小游戏部分：毛伟、关闽西。<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <div class="project container">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-4 col-md-12"><a href="#"><img src="" alt=""></a></div>
+        <div class="col-lg-4 col-md-12">
+          <h5>联系我们</h5>
+          <p>邮箱：123456@qq.com</p>
+          <h5>地址</h5>
+          <p>广东省广州市XXX区XXX</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h5>关于我们</h5>
+          <a href="#" onclick="showPage('page2')" id="footerinfomation" name="product-information">产品信息</a>
+          <br>
+          <a href="#" onclick="showPage('page3')" id="footerhelp" name="help-center">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+</body>
+
+</html>

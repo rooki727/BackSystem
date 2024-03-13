@@ -1,0 +1,295 @@
+// out: ../css/
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: #0dcaf0;
+}
+
+body {
+  position: relative;
+}
+
+#headimg {
+  width: 100%;
+}
+
+nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.bg-body-tertiary {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar {
+
+  .container-fluid {
+
+    .navbar-nav {
+      .nav-item {
+        border-right: 1px solid rgb(50, 50, 50);
+
+        .nav-link:hover {
+          color: #0dcaf0;
+        }
+
+        .nav-link {
+          font-size: 1.2rem;
+        }
+      }
+
+      .nav-item:nth-child(4) {
+        border-right: none;
+      }
+    }
+
+    .info {
+      color: red;
+
+      .icon-renzhengyonghu {
+        color: black;
+      }
+
+      .exit {
+
+        margin-top: 3%;
+        display: block;
+        margin: 0 1rem;
+        color: black;
+        width: 90%;
+        border-radius: 15%;
+        font-size: 0.9rem;
+        background-color: rgb(14, 170, 232);
+        border: 1.2px solid rgb(88, 86, 86);
+        color: white;
+      }
+
+      .exit:hover {
+        background-color: skyblue;
+      }
+    }
+  }
+}
+
+//分页
+
+@media (min-width: 1200px) {
+  .content {
+    #page1 {
+
+      width: 100%;
+      height: 36rem;
+      display: flex;
+
+      .ranking {
+        overflow: scroll;
+        margin-top: 5%;
+        height: 70%;
+        width: 16%;
+        background-color: orange;
+      }
+
+      .game {
+        margin-left: 11%;
+        margin-top: 3%;
+        margin-right: 7%;
+        height: 95%;
+        width: 65%;
+        background-color: pink;
+      }
+
+    }
+
+    #page2 {
+      margin-top: 1%;
+      text-align: center;
+
+      h2 {
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(187, 185, 185);
+      }
+
+      #information {
+        margin-top: 1%;
+        padding: 1rem;
+        margin-left: 15%;
+        width: 70%;
+        height: 35rem;
+        border: 1px solid black;
+        text-align: center;
+
+        p {
+          margin-top: 2%;
+          color: gray;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    #page3 {
+      text-align: center;
+
+      h2 {
+        margin-top: 1%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(187, 185, 185);
+      }
+    }
+
+    #page4 {
+      text-align: center;
+
+      h2 {
+        margin-top: 1%;
+        display: block;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: rgb(187, 185, 185);
+      }
+
+      #about {
+        padding: 1%;
+        margin-left: 15%;
+        margin-top: 2%;
+        border: 1px solid black;
+        width: 70%;
+
+        p {
+          color: gray;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// 电梯导航
+@media (max-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 30rem;
+    right: 3rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    height: 2.4rem;
+    width: 2.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 22rem;
+    right: 1rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 38rem;
+    right: 4rem;
+  }
+
+  .xtx-elevator a {
+    font-size: 1.1rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3em;
+  }
+}
+
+.xtx-elevator {
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+
+  a {
+    display: block;
+    border-radius: 30%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(41, 141, 199);
+
+  }
+
+  a:hover {
+    background-color: skyblue;
+  }
+}
+
+@media (max-width:992px) {
+  .project {
+    height: 35rem;
+  }
+}
+
+@media (max-width:768px) {
+  .project {
+    height: 35rem;
+  }
+}
+
+@media (min-width:992px) {
+  .project {
+    height: 20rem;
+  }
+}
+
+// footer
+.project {
+  margin-top: 5%;
+  background: linear-gradient(to right, rgb(203, 242, 219), rgb(158, 217, 182),
+      rgb(102, 171, 131), rgb(51, 133, 85), rgb(7, 75, 35));
+  height: 15rem;
+
+  .content {
+    margin-top: 2rem;
+
+    .row {
+      div {
+        margin-top: 2rem;
+        height: 10rem;
+
+        a {
+          height: 10rem;
+          text-decoration: none;
+          color: white;
+
+          img {
+            margin-top: 1rem;
+          }
+        }
+
+        h5 {
+          margin-top: 8%;
+          color: white;
+        }
+
+        p {
+          font-size: 1rem;
+          color: white;
+        }
+      }
+    }
+
+  }
+
+}

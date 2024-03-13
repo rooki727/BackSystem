@@ -1,0 +1,16 @@
+{
+  "id": "4328816",
+  "name": "软件工程",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1105",
+      "name": "认证用户",
+      "font_class": "renzhengyonghu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

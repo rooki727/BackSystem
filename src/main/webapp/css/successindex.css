@@ -1,0 +1,628 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #0dcaf0;
+}
+body {
+  position: relative;
+}
+#headimg {
+  width: 100%;
+}
+nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid white;
+}
+.bg-body-tertiary {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar .container-fluid .navbar-nav .nav-item {
+  border-right: 1px solid #323232;
+}
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+  color: #0dcaf0;
+}
+.navbar .container-fluid .navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+}
+.navbar .container-fluid .navbar-nav .nav-item:nth-child(4) {
+  border-right: none;
+}
+.navbar .container-fluid .info {
+  color: red;
+}
+.navbar .container-fluid .info .icon-renzhengyonghu {
+  color: black;
+}
+.navbar .container-fluid .info .exit {
+  margin-top: 3%;
+  display: block;
+  margin: 0 1rem;
+  color: black;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background-color: #0eaae8;
+  border: 1.2px solid #585656;
+  color: white;
+}
+.navbar .container-fluid .info .exit:hover {
+  background-color: skyblue;
+}
+.ranking {
+  position: absolute;
+  right: 4%;
+  top: 27%;
+  overflow: scroll;
+  height: 22rem;
+  width: 17%;
+  border: 1px solid orange;
+  text-align: center;
+}
+.ranking h5 {
+  color: #8b8a8a;
+}
+.ranking button {
+  background-color: #e9f3f9;
+  border-radius: 1px;
+  color: #666;
+}
+.ranking button:hover {
+  background-color: #c9d3da;
+  border-bottom: 5px solid #021e29;
+}
+.ranking .activebtn {
+  border-bottom: 6px solid #154356;
+}
+.ranking table {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 96%;
+  border-collapse: collapse;
+  color: #004085;
+}
+.ranking th {
+  text-align: center;
+  padding: 9px;
+  background: #99f8d1;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ranking td,
+.ranking th {
+  border: 1px solid #b8daff;
+}
+.ranking td {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ranking tbody tr {
+  background: #fff;
+}
+.ranking tbody tr:hover {
+  background: #e1ecf8;
+}
+.comment .expresscomment {
+  background-color: pink;
+}
+@media (max-width: 1200px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .content #page2 {
+    margin-top: 1%;
+  }
+  .content #page2 #information {
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 1%;
+    color: gray;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 2%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #bbb9b9;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .content #page1 {
+    width: 100%;
+    height: auto;
+  }
+  .content #page1 .game {
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 2%;
+    height: auto;
+    width: 65%;
+  }
+  .content #page1 .game .app {
+    text-align: center;
+    border: 1px solid orange;
+  }
+  .content #page1 .game .app h1 {
+    display: block;
+    color: white;
+    border-bottom: 1px solid orange;
+    background-color: #bbb9b9;
+  }
+  .content #page1 .game .app .settings {
+    margin-bottom: 20px;
+  }
+  .content #page1 .game .app .settings .levels {
+    font-size: medium;
+    width: 100px;
+    height: 40px;
+  }
+  .content #page1 .game .app .settings .btn {
+    font-size: medium;
+    width: 120px;
+    height: 46px;
+    border: 1px solid white;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+  }
+  .content #page1 .game .app .settings .btn:hover {
+    background-color: #f6cc7e;
+  }
+  .content #page1 .game .app .main {
+    display: inline-block;
+    background-color: #c0c0c0;
+    padding: 25px;
+    border: 1px solid orange;
+  }
+  .content #page1 .game .app .main .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .content #page1 .game .app .main .title {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #808080;
+    height: 80px;
+  }
+  .content #page1 .game .app .main .title .mine-remain {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .content #page1 .game .app .main .title .face {
+    margin: 10px;
+    width: 50px;
+    border-left: 6px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 4px solid #808080;
+    border-bottom: 4px solid #808080;
+  }
+  .content #page1 .game .app .main .title .time {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .content #page1 .game .app .main .title .time .number {
+    height: 100%;
+  }
+  .content #page1 .leftbottom .top {
+    margin-top: 1%;
+    margin-left: 11%;
+  }
+  .content #page1 .leftbottom .top span {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .content #page1 .leftbottom .guide {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .guide span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .guide p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol {
+    margin-right: 35%;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol span {
+    font-size: 13px;
+  }
+  .content #page1 .leftbottom .guide #iconcontrol p {
+    font-size: 15px;
+  }
+  .content #page1 .leftbottom .howtoplay {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .howtoplay span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .howtoplay p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .gametarget {
+    margin-top: 1%;
+    margin-left: 12%;
+  }
+  .content #page1 .leftbottom .gametarget span {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .gametarget p {
+    font-size: 16px;
+  }
+  .content #page1 .leftbottom .bottomremember {
+    margin-top: 1%;
+    margin-left: 12%;
+    font-size: 13px;
+    color: gray;
+  }
+  .content .comment{
+    margin-top: 2%;
+    text-align: center;
+  }
+  .content .comment button{
+    margin-top: 0;
+    border: 1px solid grey;
+    background-color: #d9c093;
+    color: white;
+    width: 4rem;
+    border-radius: 10px;
+  }
+  .content .comment button:hover{
+    background-color: #e5d2bc;
+    color: black;
+  }
+  /*.content .comment commentarea {*/
+  /*  */
+  /*}*/
+  .content .comment #expresscomment {
+    overflow: scroll;
+    margin: 2% auto;
+    border: 1px solid orange;
+    height: 20rem;
+    width: 70%;
+  }
+  .content .comment #expresscomment p {
+    margin-left: 2%;
+    word-wrap: break-word;   /* 允许单词在中间断开换行 */
+    overflow-wrap: break-word;  /* 控制非单词文本的换行 */
+    width: 96%;  /* 或者你想要的具体宽度 */
+  }
+  .content #page2 {
+    margin-top: 1%;
+    text-align: center;
+  }
+  .content #page2 h2 {
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page2 #information {
+    margin-top: 1%;
+    padding: 1rem;
+    margin-left: 15%;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .content #page2 #information p {
+    margin-top: 2%;
+    color: gray;
+    font-size: 1.2rem;
+  }
+  .content #page3 {
+    text-align: center;
+  }
+  .content #page3 h2 {
+    margin-top: 1%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page3 h5 {
+    margin-top: 1%;
+  }
+  .content #page3 h5 a {
+    text-decoration: none;
+  }
+  .content #page4 {
+    text-align: center;
+  }
+  .content #page4 h2 {
+    margin-top: 1%;
+    display: block;
+    color: white;
+    border: 1px solid #0c0c0c;
+    background-color: #f5c979;
+  }
+  .content #page4 #about {
+    padding: 1%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 1px solid black;
+    width: 70%;
+  }
+  .content #page4 #about p {
+    color: gray;
+    font-size: 1.2rem;
+  }
+}
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #808080;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.cell-cover {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  /* border: none; */
+  border-left: 6px solid #fff;
+  border-top: 6px solid #fff;
+  border-right: 4px solid #808080;
+  border-bottom: 4px solid #808080;
+}
+.board {
+  display: inline-block;
+  border: 5px solid #808080;
+}
+@media (max-width: 1200px) {
+  /* 适应手机 */
+  .btn {
+    font-size: medium;
+    width: 30% !important;
+    height: 40px;
+  }
+  .levels {
+    font-size: medium;
+    width: 30% !important;
+    height: 40px;
+  }
+  .main {
+    display: inline-block;
+    background-color: #c0c0c0;
+    padding: 25px;
+    overflow: auto !important;
+  }
+  .board-simple {
+    display: inline-block;
+    border: 5px solid #808080;
+    width: 380px;
+  }
+  .board-medium {
+    display: inline-block;
+    border: 5px solid #808080;
+    width: 650px;
+  }
+  .board-hard {
+    display: inline-block;
+    border: 5px solid #808080;
+    width: 1200px;
+  }
+}
+@media (max-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 30rem;
+    right: 3rem;
+  }
+  .xtx-elevator a {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    height: 2.4rem;
+    width: 2.4em;
+  }
+}
+@media (max-width: 768px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 22rem;
+    right: 1rem;
+  }
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .xtx-elevator {
+    position: fixed;
+    top: 38rem;
+    right: 4rem;
+  }
+  .xtx-elevator a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 3.5em;
+  }
+}
+.xtx-elevator {
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+}
+.xtx-elevator a {
+  margin-top: 5%;
+  display: block;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #c0bfbf;
+}
+.xtx-elevator a:hover {
+  background-color: #efebeb;
+}
+@media (max-width: 992px) {
+  .project {
+    height: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .project {
+    height: 35rem;
+  }
+}
+@media (min-width: 992px) {
+  .project {
+    height: 20rem;
+  }
+}
+.project {
+  margin-top: 5%;
+  background: linear-gradient(to right, #cbf2db, #9ed9b6, #66ab83, #338555, #074b23);
+  height: 15rem;
+}
+.project .content {
+  margin-top: 2rem;
+}
+.project .content .row div {
+  margin-top: 2rem;
+  height: 10rem;
+}
+.project .content .row div a {
+  height: 10rem;
+  text-decoration: none;
+  color: white;
+}
+.project .content .row div a img {
+  margin-top: 1rem;
+}
+.project .content .row div h5 {
+  margin-top: 8%;
+  color: white;
+}
+.project .content .row div p {
+  font-size: 1rem;
+  color: white;
+}

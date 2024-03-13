@@ -1,0 +1,143 @@
+// out: ../css/
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: rgba(237, 232, 232, 0.5);
+}
+
+.sidebar {
+  width: 10%;
+  background-color: white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  border: 1px solid rgb(142, 141, 141);
+
+  ul {
+    margin-top: 100px;
+    list-style: none;
+    padding-left: 5%;
+
+    li {
+
+      padding: 8% 14%;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.1rem;
+
+        img {
+          width: 80%;
+          margin-bottom: 20%;
+        }
+      }
+    }
+
+    .active {
+      background-color: #ddd;
+    }
+
+    li:hover {
+      background-color: #ddd;
+    }
+  }
+
+}
+
+// 内容板块
+@media (min-width:996px) {
+  .exterior {
+    margin-left: 10%;
+    position: relative;
+    height: 100%;
+    height: 53rem;
+    flex: 1;
+
+    .info {
+      position: absolute;
+      top: 2%;
+      right: 3%;
+      color: red;
+
+      .icon-renzhengyonghu {
+        color: black;
+      }
+
+      .exit {
+        margin-top: 3%;
+        display: block;
+        margin: 0 1rem;
+        color: black;
+        width: 100%;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        background-color: rgb(14, 170, 232);
+        border: 1.2px solid rgb(88, 86, 86);
+        color: white;
+      }
+
+      .exit:hover {
+        background-color: skyblue;
+      }
+    }
+
+    .indexcontent {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: 12%;
+      left: 1%;
+      width: 88%;
+      height: 76%;
+      background-color: #ddd;
+
+
+      .admintotal {
+        text-align: center;
+        margin-top: 8%;
+        width: 26%;
+        height: 50%;
+        background-color: white;
+        border: 1px solid black;
+
+        p {
+          margin-top: 35%;
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 18px;
+          color: red;
+        }
+
+      }
+
+      .usertotal {
+        text-align: center;
+        margin-top: 8%;
+        width: 26%;
+        height: 50%;
+        background-color: white;
+        border: 1px solid black;
+
+        p {
+          margin-top: 35%;
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 18px;
+          color: red;
+        }
+
+      }
+    }
+  }
+}

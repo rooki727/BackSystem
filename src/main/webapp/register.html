@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册页面</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+  </div>
+  <!-- 背景图 -->
+  <div class="contentpart">
+    <div class="registerpage">
+
+      <div class="accpass">
+        <h2>用户注册</h2>
+        <div class="warnaccount">
+          账号由数字组成,长度为5~12
+        </div>
+        <input type="text" placeholder="请输入用户名：" name="account" id="account"> <span id="checkname"></span>
+        <br>
+        <div class="warnpassword">
+          密码由数字或字母组成，长度为6~16
+        </div>
+        <input type="password" placeholder="请输入密码：" name="password" id="password">
+        <br>
+        <input type="password" placeholder="请确认密码：" name="repassword" class="repassword"><span
+          class="notice">密码不一致!</span>
+        <br>
+        <div class="vcode">
+          <div class="captcha">
+            <p></p>
+          </div>
+          <input class="codeinput" type="text" placeholder="输入验证码" name="code" class="codeinput">
+          <span>验证不正确！</span>
+        </div>
+        <br>
+        <a href="login.html">已有账号，点击前往登陆</a>
+        <br>
+        <a href="faceregister.html">注册人脸识别</a>
+        <br>
+        <button type="button" class="registerdiv" id="submit">注册</button>
+      </div>
+    </div>
+    <img src="imgae/backgroundimg.png" alt="">
+  </div>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>

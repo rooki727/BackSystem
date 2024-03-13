@@ -1,0 +1,421 @@
+@media (max-width: 1200px) {
+  .registerpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .registerpage .accpass {
+    margin-top: 11%;
+    font-size: 130%;
+  }
+  .registerpage .accpass h2 {
+    margin-left: 33%;
+    font-weight: 400;
+    color: #3f3e3e;
+    font-size: 1.4rem;
+    color: white;
+  }
+  .registerpage .accpass #checkname {
+    display: none;
+    margin-left: 1%;
+    color: red;
+    font-size: 0.9rem;
+  }
+  .registerpage .accpass .warnaccount {
+    margin-left: 23%;
+    font-size: 0.9rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass .warnpassword {
+    margin-left: 23%;
+    font-size: 0.9rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass .notice {
+    margin-left: 1%;
+    font-size: 0.9rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass input {
+    border-radius: 15px;
+    margin-left: 22%;
+    width: 33%;
+    height: 2.2rem;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode {
+    margin-left: 22%;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode .captcha {
+    height: 2.8rem;
+    width: 10%;
+  }
+  .registerpage .accpass .vcode .captcha p {
+    margin-top: 9%;
+    color: #a70c33;
+  }
+  .registerpage .accpass .vcode .codeinput {
+    margin-top: 0;
+    height: 2.8rem;
+    width: 13%;
+    margin-left: 1%;
+  }
+  .registerpage .accpass .vcode span {
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 0.9rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass a {
+    font-size: 80%;
+    margin-left: 22%;
+  }
+  .registerpage .accpass button {
+    border-radius: 15px;
+    margin-left: 33%;
+    margin-top: 3%;
+    height: 30px;
+    width: 10%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #faf6f6;
+    border: 1.5px solid white;
+  }
+  .registerpage .accpass button:hover {
+    background-color: #f1f4f5;
+    color: black;
+  }
+}
+@media (max-width: 992px) {
+  .registerpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .registerpage .accpass {
+    margin-top: 6%;
+    font-size: 130%;
+  }
+  .registerpage .accpass h2 {
+    margin-left: 34%;
+    font-weight: 400;
+    color: #3f3e3e;
+    font-size: 1.6rem;
+    color: white;
+  }
+  .registerpage .accpass #checkname {
+    display: none;
+    margin-left: 1%;
+    color: red;
+    font-size: 0.8rem;
+  }
+  .registerpage .accpass .warnaccount {
+    margin-left: 24%;
+    font-size: 0.7rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass .warnpassword {
+    margin-left: 24%;
+    font-size: 0.7rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass input {
+    border-radius: 15px;
+    margin-left: 22%;
+    width: 38%;
+    height: 2.2rem;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode {
+    margin-left: 22%;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode .captcha {
+    width: 20%;
+  }
+  .registerpage .accpass .vcode .captcha p {
+    margin-top: 9%;
+    color: #a70c33;
+  }
+  .registerpage .accpass .vcode .codeinput {
+    margin-top: 0%;
+    height: 2.8rem;
+    width: 17%;
+    margin-left: 1%;
+  }
+  .registerpage .accpass .vcode span {
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 0.8rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass a {
+    font-size: 80%;
+    margin-left: 22%;
+  }
+  .registerpage .accpass button {
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-top: 3%;
+    height: 30px;
+    width: 14%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #faf6f6;
+    border: 1.5px solid white;
+  }
+  .registerpage .accpass button:hover {
+    background-color: #f1f4f5;
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .registerpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .registerpage .accpass {
+    margin-top: 3%;
+    font-size: 70%;
+  }
+  .registerpage .accpass h2 {
+    margin-left: 30%;
+    font-weight: 400;
+    color: #3f3e3e;
+    font-size: 0.8rem;
+    color: white;
+  }
+  .registerpage .accpass #checkname {
+    display: none;
+    margin-left: 1%;
+    color: red;
+    font-size: 0.7rem;
+  }
+  .registerpage .accpass .warnaccount {
+    margin-left: 4%;
+    font-size: 0.5rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass .warnpassword {
+    margin-left: 4%;
+    font-size: 0.5rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass input {
+    border-radius: 15px;
+    margin-left: 2%;
+    width: 70%;
+    height: 1.2rem;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode {
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+  .registerpage .accpass .vcode .captcha {
+    height: 1.4rem;
+    width: 15%;
+  }
+  .registerpage .accpass .vcode .captcha p {
+    margin-top: 9%;
+    color: #a70c33;
+  }
+  .registerpage .accpass .vcode .codeinput {
+    margin-top: 0%;
+    height: 1.4rem;
+    width: 30%;
+    margin-left: 1%;
+  }
+  .registerpage .accpass .vcode span {
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 0.7rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass a {
+    font-size: 80%;
+    margin-left: 2%;
+  }
+  .registerpage .accpass button {
+    border-radius: 15px;
+    margin-left: 29%;
+    margin-top: 0%;
+    height: 25px;
+    width: 20%;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #faf6f6;
+    border: 1.5px solid white;
+  }
+  .registerpage .accpass button:hover {
+    background-color: #f1f4f5;
+    color: black;
+  }
+}
+@media (min-width: 1200px) {
+  .registerpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .registerpage .accpass {
+    margin-top: 13%;
+    font-size: 130%;
+  }
+  .registerpage .accpass #checkname {
+    display: none;
+    margin-left: 1%;
+    font-size: 0.9rem;
+  }
+  .registerpage .accpass .warnaccount {
+    margin-left: 25%;
+    font-size: 0.9rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass .warnpassword {
+    margin-left: 25%;
+    font-size: 0.9rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass .notice {
+    margin-left: 1%;
+    font-size: 0.9rem;
+    display: none;
+    color: #df3737;
+  }
+  .registerpage .accpass h2 {
+    margin-left: 34%;
+    font-weight: 400;
+    color: #3f3e3e;
+    font-size: 1.6rem;
+    color: white;
+  }
+  .registerpage .accpass input {
+    border-radius: 15px;
+    margin-left: 24%;
+    width: 28%;
+    height: 2.2rem;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode {
+    margin-left: 24%;
+    margin-top: 2%;
+  }
+  .registerpage .accpass .vcode .captcha {
+    height: 2.8rem;
+    width: 8%;
+  }
+  .registerpage .accpass .vcode .captcha p {
+    margin-top: 9%;
+    color: #a70c33;
+  }
+  .registerpage .accpass .vcode .codeinput {
+    margin-top: 0%;
+    height: 2.8rem;
+    width: 10%;
+    margin-left: 1%;
+  }
+  .registerpage .accpass .vcode span {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    display: none;
+    color: #e34242;
+  }
+  .registerpage .accpass a {
+    font-size: 80%;
+    margin-left: 24%;
+  }
+  .registerpage .accpass button {
+    border-radius: 15px;
+    margin-left: 34%;
+    margin-top: 3%;
+    height: 30px;
+    width: 8%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #faf6f6;
+    border: 1.5px solid white;
+  }
+  .registerpage .accpass button:hover {
+    background-color: #f1f4f5;
+    color: black;
+  }
+}
+.contentpart {
+  position: relative;
+  width: 100%;
+  /* 注册模块 */
+}
+.contentpart .registerpage {
+  background: linear-gradient(to right, #cbedf2, #8cccd6, #4fa5b1, #1f7d8a, #06545f);
+}
+.contentpart .registerpage .accpass {
+  margin-left: 19%;
+}
+.contentpart .registerpage .accpass input {
+  border: 1.5px solid white;
+  text-indent: 10%;
+  background-color: rgba(159, 157, 157, 0.4);
+}
+.contentpart .registerpage .accpass input:hover {
+  background-color: rgba(94, 93, 93, 0.8);
+}
+.contentpart .registerpage .accpass .active {
+  background-color: rgba(105, 103, 103, 0.8);
+}
+.contentpart .registerpage .accpass input::placeholder {
+  color: #faf6f6;
+  /* 修改颜色 */
+  font-style: italic;
+  /* 修改字体样式 */
+  font-size: 14px;
+  /* 修改字体大小 */
+  /* 其他样式属性 */
+}
+.contentpart .registerpage .accpass .vcode {
+  display: flex;
+}
+.contentpart .registerpage .accpass .vcode .captcha {
+  text-align: center;
+  background-color: rgba(245, 243, 243, 0.5);
+  cursor: pointer;
+  border: 1px solid rgba(21, 20, 20, 0.5);
+  border-radius: 8px;
+  margin-right: 5%;
+}
+.contentpart .registerpage .accpass .vcode .codeinput {
+  border-radius: 12px;
+}
+.contentpart .registerpage .accpass a {
+  color: blue;
+}
+.contentpart .registerpage .accpass button {
+  display: block;
+  cursor: pointer;
+}
+.contentpart img {
+  width: 100%;
+}

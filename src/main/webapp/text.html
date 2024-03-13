@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax Example</title>
+</head>
+<body>
+
+<h1>JavaWeb Ajax Example</h1>
+
+<button onclick="sendAjaxRequest()">Send Ajax Request</button>
+
+<div id="response-container"></div>
+
+<script>
+  function sendAjaxRequest() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          // 请求成功
+          document.getElementById("response-container").innerHTML = xhr.responseText;
+        } else {
+          // 请求失败
+          document.getElementById("response-container").innerHTML = "Error: " + xhr.status;
+        }
+      }
+    };
+
+    xhr.open("GET", "MyServlet", true);
+    xhr.send();
+  }
+</script>
+
+</body>
+</html>

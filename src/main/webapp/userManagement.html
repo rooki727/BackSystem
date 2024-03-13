@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户管理</title>
+  <link rel="stylesheet" href="iconfont/font_4328816_uki28nmxnai/iconfont.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/userManagement.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <ul>
+      <!-- <li><a><img src="" alt="logo"></a></li> -->
+      <li class="index"><a class="index">首页</a></li>
+      <li class="userManagement active"><a class="">用户管理</a></li>
+      <li class="logManagement"><a class="">管理日志</a></li>
+      <li class="userlogManagement"><a class="">用户日志</a></li>
+    </ul>
+  </div>
+  <!-- 内容 -->
+  <div class="exterior">
+    <!-- 用户显示以及退出登陆 -->
+    <div class="info">
+      <i class="iconfont icon-renzhengyonghu"></i>
+      <span id="userinfotext1"></span>
+      <button type="button" class="exit" value="退出">退出</button>
+    </div>
+
+    <div class="indexcontent">
+      <!-- 切换用户 -->
+      <div class="changeUser">
+        <ul>
+          <li class="active" onclick="showPage('pageadmin')" id="changeadmin">
+            admin
+          </li>
+          <li onclick="showPage('pageuser')" id="changeuser">
+            user
+          </li>
+        </ul>
+      </div>
+      <button type="button" id="refreshBtn">刷新</button>
+      <div id="pageadmin" class="page">
+        <h5>新增admin</h5>
+        <!-- 新增admin-->
+        <form class="addinfo" autocomplete="off">
+          用户名：<input type="text" class="adminuname" name="uname" />
+          密码：<input type="text" class="adminpassword" name="password" />
+          <button id="addadmin">录入</button>
+          <div id="admincheckname"></div>
+        </form>
+        <!-- 搜索 -->
+        <div class="searchbyname">
+          <input type="text" class="searchinput" name="search" />
+          <button id="searchbtn">搜索</button>
+          <button id="adminreturnall" style="display: none;">返回</button>
+        </div>
+        <!-- //表格部分 -->
+        <div id="expressall">
+          <table id="expressadmin">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th colspan="3">操作</th>
+              </tr>
+            </thead>
+            <tbody id="table1">
+            </tbody>
+          </table>
+          <div id="pagination1" class="pagination"></div> <!-- 分页器容器 -->
+        </div>
+
+        <div id="searchout">
+          <table id="adminsearch">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th colspan="3">操作</th>
+              </tr>
+            </thead>
+            <tbody id="table2">
+              <!-- js渲染 -->
+            </tbody>
+          </table>
+          <div id="pagination2" class="pagination"></div> <!-- 分页器容器 -->
+        </div>
+      </div>
+
+      <!--  用户管理页面-->
+      <div id="pageuser" class="page" style="display: none;">
+        <h5>新增user</h5>
+        <!-- 新增用户 -->
+        <form class="useraddinfo" autocomplete="off">
+          用户名：<input type="text" class="useruname" name="uname" />
+          密码：<input type="text" class="userpassword" name="password" />
+          <button id="adduser">录入</button>
+          <div id="usercheckname"></div>
+        </form>
+        <!-- 搜索 -->
+        <div class="usersearchbyname">
+          <input type="text" class="usersearchinput" name="search" />
+          <button id="usersearchbtn">搜索</button>
+          <button id="userreturnall" style="display: none;">返回</button>
+        </div>
+
+        <!-- //表格部分 -->
+        <div id="userexpressall">
+          <table id="expressuser">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th colspan="3">操作</th>
+              </tr>
+            </thead>
+            <tbody id="table3">
+
+            </tbody>
+          </table>
+          <div id="pagination3" class="pagination"></div>
+        </div>
+
+
+        <div id="usersearchout">
+          <table id="usersearch">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th colspan="3">操作</th>
+              </tr>
+            </thead>
+            <tbody id="table4">
+              <!-- js渲染 -->
+            </tbody>
+          </table>
+          <div id="pagination4" class="pagination">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/userManagement.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+</body>
+
+</html>

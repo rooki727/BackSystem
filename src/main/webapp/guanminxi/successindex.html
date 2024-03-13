@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品图片打标签</title>
+  <link rel="stylesheet" href="../iconfontt/font_4328816_uki28nmxnai/iconfont.css">
+  <link rel="stylesheet" href="../csss/base.css">
+  <link rel="stylesheet" href="../Bootstrapp/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Bootstrapp/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../csss/successindex.css">
+</head>
+
+<style>
+
+</style>
+
+<body>
+  <img src="../javaWeb/imgae/head-img.jpg" id="headimg" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- logo -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="" alt=""></a>
+
+      <!-- 移动端下的按钮 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 简介栏 -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="showPage('page1')" id="index">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page2')" id="product-information">产品信息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page3')" id="help-center">帮助中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('page4')" id="about-us">关于我们</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 用户显示以及退出登陆 -->
+      <div class="info">
+        <i class="iconfont icon-renzhengyonghu"></i>
+        <span id="userinfotext1"></span>
+        <button type="button" class="exit" value="退出">退出</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div id="page1" class="page">
+      <!-- 介绍 -->
+
+      <!-- h5小游戏面板 -->
+      <div class="game">game</div>
+      <!-- 排行榜 -->
+      <div class="ranking">ranking</div>
+
+
+      <!-- 电梯导航 -->
+      <div class="xtx-elevator">
+        <a class="topgo"><i>顶部</i></a>
+        <a class="tointroduce">介绍</a>
+        <a class="touse">使用</a>
+        <a class="tofooter">底部</a>
+      </div>
+    </div>
+
+    <div id="page2" class="page" style="display: none;">
+      <h2>产品简介</h2>
+      <div id="information">
+        <img src="" alt="">
+        <p>
+          商品图片分类的人工智能平台的主要功能是根据输入的商品图片，<br>
+          返回其所属的类别和置信度等信息。<br>
+          这样的平台可以为电商、零售、仓储等行业提供便捷的商品管理和检索服务。<br>
+          目前，已经有一些平台提供了这样的能力，例如阿里云视觉智能开放平台、腾讯云图像识别等，<br>
+          故商品图片分类的人工智能平台是一个技术可行的项目。
+        </p>
+      </div>
+    </div>
+    <div id="page3" class="page" style="display: none;">
+      <div class="helpcenter">
+        <h2>帮助流程图</h2>
+        <img src="../imgae/help.png" alt="">
+      </div>
+
+
+    </div>
+    <div id="page4" class="page" style="display: none;">
+      <h2>软件工程第一组:振鹏组</h2>
+      <div id="about">
+        <p>我们是计算机外包21的软件工程课程的小组。<br>
+          成员包括花哨、john、区锋、rooki。<br>
+          我们主要围绕选题“商品图片打标签"成立小组。<br>
+          人工智能&文档编写：john和区锋，前端：rooki，后端：花哨。<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="project container">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-4 col-md-12"><a href="#"><img src="" alt=""></a></div>
+        <div class="col-lg-4 col-md-12">
+          <h5>联系我们</h5>
+          <p>邮箱：123456@qq.com</p>
+          <h5>地址</h5>
+          <p>广东省广州市XXX区XXX</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h5>关于我们</h5>
+          <a href="#" onclick="showPage('page2')" id="footerinfomation" name="product-information">产品信息</a>
+          <br>
+          <a href="#" onclick="showPage('page3')" id="footerhelp" name="help-center">帮助中心</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../Bootstrapp/js/bootstrap.min.js"></script>
+  <script src="../jss/successindex.js"></script>
+</body>
+
+</html>
